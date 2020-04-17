@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Hercules</string>
+    <string name="person_data">Личные данные</string>
+    <string name="statistic">Статистика</string>
+    <string name="plan">Составить пллан</string>
+    <string name="prop">Рассчитать пропорции</string>
+    <string name="аct1">Актуальные</string>
+    <string name="аct2">Пропорции</string>
+    <string name="аct3">Прогноз</string>
+    <string name="bodyNeck">Шея</string>
+    <string name="bodyBiceps">Бицепс</string>
+    <string name="bodyForearm">Предплечья</string>
+    <string name="bodyChest">Грудь</string>
+    <string name="bodyWaist">Талия</string>
+    <string name="bodyBasin">Таз</string>
+    <string name="bodyHips">Бедра</string>
+    <string name="bodyShin">Голень</string>
+    <string name="bodyHeight">Рост</string>
+    <string name="bodyWeight">Вес</string>
+    <string name="bodyExp">Стаж</string>
+    <string name="bodyWrist">Запястье</string>
+
+    <string name="propNeck">Шея</string>
+    <string name="propBiceps">Бицепс</string>
+    <string name="propForearm">Предплечья</string>
+    <string name="propChest">Грудь</string>
+    <string name="propWaist">Талия</string>
+    <string name="propBasin">Таз</string>
+    <string name="propHips">Бедра</string>
+    <string name="propShin">Голень</string>
+
+    <string name="timeNeck">0</string>
+    <string name="timeBiceps">0</string>
+    <string name="timeForearm">0</string>
+    <string name="timeChest">0</string>
+    <string name="timeWaist">0</string>
+    <string name="timeBasin">0</string>
+    <string name="timeHips">0</string>
+    <string name="timeShin">0</string>
+
+</resources>
