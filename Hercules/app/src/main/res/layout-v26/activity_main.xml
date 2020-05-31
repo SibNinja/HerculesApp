@@ -36,7 +36,7 @@
         tools:ignore="SmallSp" />
 
     <EditText
-        android:id="@+id/weight1"
+        android:id="@+id/ex"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="75dp"
         android:layout_height="wrap_content"
@@ -53,10 +53,10 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/weight1"
+        app:layout_constraintStart_toEndOf="@+id/ex"
         app:layout_constraintTop_toBottomOf="@+id/shin"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SmallSp,TextFields" />
+        tools:ignore="NotSibling,SmallSp,TextFields" />
 
     <EditText
         android:id="@+id/high"
@@ -74,7 +74,7 @@
         android:textAlignment="center"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/weight1"
+        app:layout_constraintEnd_toStartOf="@+id/ex"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shin"

@@ -29,7 +29,7 @@
         android:textAlignment="center"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/weight1"
+        app:layout_constraintEnd_toStartOf="@+id/ex"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shin"
         app:layout_constraintVertical_bias="0.0"
@@ -232,7 +232,7 @@
         tools:targetApi="o" />
 
     <EditText
-        android:id="@+id/weight1"
+        android:id="@+id/ex"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="75dp"
         android:layout_height="wrap_content"
@@ -752,7 +752,7 @@
         tools:ignore="SmallSp"
         tools:targetApi="o" />
 
-    <EditText
+    <TextView
         android:id="@+id/neck2"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="75dp"
@@ -763,7 +763,7 @@
         android:ems="10"
         android:hint="@string/bodyNeck"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+
         android:textAlignment="center"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
@@ -797,4 +797,24 @@
         tools:ignore="SmallSp"
         tools:targetApi="o" />
 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Read DB" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
