@@ -64,6 +64,10 @@ public class BDHelper extends SQLiteOpenHelper {
         return dbFile.exists();
     }
 
+
+
+
+
     private void copyDataBase() {
         if (!checkDataBase()) {
             this.getReadableDatabase();

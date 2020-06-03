@@ -1,13 +1,14 @@
 package basam.example.com.hercules;
 
-import android.database.Cursor;
-import android.content.Intent;
-import android.content.ContentValues;
-import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
+//import android.database.Cursor;
+//import android.content.Intent;
+//import android.content.ContentValues;
+//import android.database.SQLException;
+//import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -22,10 +23,10 @@ import java.util.HashMap;
 public class MainActivity extends AppCompatActivity /*implements View.OnClickListener*/ {
 
     Button prop, plan;
-    private ArrayList<String> name;
+   // private ArrayList<String> name;
     //Переменная для работы с БД
-    private BDHelper mDBHelper;
-    private SQLiteDatabase mDb;
+    //private BDHelper mDBHelper;
+    //private SQLiteDatabase mDb;
     // Параметры для таблиц
     EditText high, weight1, exp3, wrist;
     //Базовые параметры
@@ -34,7 +35,28 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
 
     //БД
     //BDHelper dbHelper;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        prop = (Button) findViewById(R.id.prop);
 
+        plan = (Button) findViewById(R.id.plan);
+
+        OnClickListener oclBtnOk = new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                prop.setText("Нажата кнопка ОК");
+            }
+        };
+
+        // присвоим обработчик кнопке OK
+        prop.setOnClickListener(oclBtnOk);
+
+    }
+}
+    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
