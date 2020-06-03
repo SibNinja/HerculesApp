@@ -15,6 +15,8 @@ import android.widget.EditText;
 
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 
 public class MainActivity extends AppCompatActivity /*implements View.OnClickListener*/ {
 
@@ -107,22 +109,30 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
                 //запрос на возврат времени
                 double[] time = cTime.calcTime(p1,p2,w,e);
 
+                String d = new DecimalFormat("#0.00").format(time[0]);
                 //заполнение ряда пропорции из БД
-                r = String.valueOf(time[0]);
+                r = String.valueOf(d);
                 neck3.setText(r);
-                r = String.valueOf(time[1]);
+                d = new DecimalFormat("#0.00").format(time[1]);
+                r = String.valueOf(d);
                 biceps3.setText(r);
-                r = String.valueOf(time[2]);
+                d = new DecimalFormat("#0.00").format(time[2]);
+                r = String.valueOf(d);
                 forearm3.setText(r);
-                r = String.valueOf(time[3]);
+                d = new DecimalFormat("#0.00").format(time[3]);
+                r = String.valueOf(d);
                 chest3.setText(r);
-                r = String.valueOf(time[4]);
+                d = new DecimalFormat("#0.00").format(time[4]);
+                r = String.valueOf(d);
                 waist3.setText(r);
-                r = String.valueOf(time[5]);
+                d = new DecimalFormat("#0.00").format(time[5]);
+                r = String.valueOf(d);
                 basin3.setText(r);
-                r = String.valueOf(time[6]);
+                d = new DecimalFormat("#0.00").format(time[6]);
+                r = String.valueOf(d);
                 hips3.setText(r);
-                r = String.valueOf(time[7]);
+                d = new DecimalFormat("#0.00").format(time[7]);
+                r = String.valueOf(d);
                 shin3.setText(r);
             }
         };
